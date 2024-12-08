@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3849989511928618204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3849989511928618207}
+  - component: {fileID: 3849989511928618206}
+  - component: {fileID: 3849989511928618205}
+  m_Layer: 0
+  m_Name: dailyRewards (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &3849989511928618207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3849989511928618204}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -640, y: -400, z: 0}
+  m_LocalScale: {x: 1.1347517, y: 1.1347517, z: 1.1347517}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3849989511928618206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3849989511928618204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a1b9ef8a211fc24b9b9bda915bc979d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSingleton: 0
+  worldClockUrl: http://worldclockapi.com/api/json/est/now
+  worldClockFMT: yyyy-MM-dd'T'HH:mmzzz
+  useWorldClockApi: 0
+  worldClock:
+    currentDateTime: 
+    utcOffset: 
+    dayOfTheWeek: 
+    timeZoneName: 
+    currentFileTime: 0
+    ordinalDate: 
+    serviceResponse: 
+  errorMessage: 
+  isErrorConnect: 0
+  maxRetries: 3
+  isInitialized: 0
+  rewards:
+  - unit: Coins
+    reward: 1000
+    sprite: {fileID: 21300000, guid: c3a0fc9ee6d28014191a796a0501f5e3, type: 3}
+    successMessage: You Are rewarded to
+  - unit: Coins
+    reward: 2000
+    sprite: {fileID: 21300000, guid: c3a0fc9ee6d28014191a796a0501f5e3, type: 3}
+    successMessage: You Are rewarded to
+  - unit: Jeep
+    reward: 0
+    sprite: {fileID: 21300000, guid: c3a0fc9ee6d28014191a796a0501f5e3, type: 3}
+    successMessage: You Are Rewarded PowerFul Jeep.
+  - unit: Coins
+    reward: 10000
+    sprite: {fileID: 21300000, guid: c3a0fc9ee6d28014191a796a0501f5e3, type: 3}
+    successMessage: You Are rewarded to
+  - unit: Jeep
+    reward: 0
+    sprite: {fileID: 21300000, guid: c3a0fc9ee6d28014191a796a0501f5e3, type: 3}
+    successMessage: You Are Rewarded PowerFul Jeep.
+  - unit: Coins
+    reward: 25000
+    sprite: {fileID: 21300000, guid: c3a0fc9ee6d28014191a796a0501f5e3, type: 3}
+    successMessage: You Are rewarded to
+  - unit: Jeep
+    reward: 0
+    sprite: {fileID: 21300000, guid: c3a0fc9ee6d28014191a796a0501f5e3, type: 3}
+    successMessage: You Are Rewarded PowerFul Jeep.
+  availableReward: 0
+  lastReward: 0
+  keepOpen: 0
+--- !u!114 &3849989511928618205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3849989511928618204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd55acd727d51e242aea5ec63c2db1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dailyRewardPanel: {fileID: 0}
+  dailyRewardPrefab: {fileID: 168450, guid: a9acec6186d591742a02bfc7fbea3388, type: 3}
+  panelDebug: {fileID: 0}
+  isDebug: 0
+  panelReward: {fileID: 0}
+  paneldailyReward: {fileID: 0}
+  AllRewardParent: {fileID: 0}
+  Jeep1: {fileID: 0}
+  jeep2: {fileID: 0}
+  jeep3: {fileID: 0}
+  Reward2x: {fileID: 0}
+  textReward: {fileID: 0}
+  rewardCounter: {fileID: 0}
+  Statments: {fileID: 0}
+  buttonCloseReward: {fileID: 0}
+  buttonClaimGo: {fileID: 0}
+  buttonCloseGo: {fileID: 0}
+  buttonClaim: {fileID: 0}
+  buttonClose: {fileID: 0}
+  textTimeDue: {fileID: 0}
+  dailyRewardsGroup: {fileID: 0}
+  scrollRect: {fileID: 0}
+  imageReward: {fileID: 0}
+  dailyRewardsUI:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  isDebugPanels: 0
+  currentRewardPrice: 0
